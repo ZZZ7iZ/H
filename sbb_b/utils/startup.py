@@ -54,9 +54,9 @@ async def saves():
     except Exception as e:
         print(str(e))
     try:
-        await sbb_b(JoinChannelRequest("@ZZZ7iZ"))
-        await sbb_b(JoinChannelRequest("@ZZZ7iZ"))
-        await sbb_b(JoinChannelRequest("@ZZZ7iZ"))
+        await sbb_b(JoinChannelRequest("ZZZ7iZ"))
+        await sbb_b(JoinChannelRequest("ZZZ7iZ"))
+        await sbb_b(JoinChannelRequest("ZZZ7iZ"))
     except BaseException:
         pass
 
@@ -68,7 +68,7 @@ async def mybot():
     f"ـ {rz_ment}"
     f"⪼ هذا هو بوت خاص بـ {rz_ment} يمكنك التواصل معه هنا"
     starkbot = await sbb_b.tgbot.get_me()
-    perf = "[  بـدأ سـورس الخليفه @ZZZ7iZ ]"
+    perf = "[ بـدأ سـورس الخليفه ]"
     bot_name = starkbot.first_name
     botname = f"@{starkbot.username}"
     if bot_name.endswith("Assistant"):
@@ -93,7 +93,7 @@ async def startupmessage():
         if BOTLOG:
             Config.JMTHONLOGO = await sbb_b.tgbot.send_file(
                 BOTLOG_CHATID,
-                "https://telegra.ph/file/5581d81211955ec26c13b.jpg",
+                "https://graph.org/file/f3656e866e28b7c13bb9b.jpg",
                 caption=" بــوت الـخلـيفـه يـعـمـل بـنـجـاح  **\n\n** ارسل `.الاوامر` لرؤية اوامر السورس**\n\n** قـنـاة سـورس الخليفه @ZZZ7iZ",
                 buttons=[(Button.url(" ѕᴏᴜʀᴄᴇ ᴄᴀʟɪᴘʜ ", "https://t.me/ZZZ7iZ"),)],
             )
