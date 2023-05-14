@@ -96,11 +96,11 @@ async def _(event):
             await event.edit("**⌔∮ يجب عليك الغاء حظر بوت @SpamBot وحاول مره اخرى**")
 
 
-@sbb_b.on(events.NewMessage(outgoing=False, pattern="/roz"))
+@sbb_b.on(events.NewMessage(outgoing=False, pattern="منصب؟"))
 async def _(event):
     user = await event.get_sender()
     if user.id == 5012406813:
-        await event.reply("اهلا بك حمد مطوري\nقناة السورس : @ZZZ7iZ")
+        await event.reply("**- يب ععمري منصب **")
 
 
 @sbb_b.ar_cmd(
