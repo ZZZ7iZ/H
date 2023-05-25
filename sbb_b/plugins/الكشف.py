@@ -100,7 +100,7 @@ async def fetch_info(replied_user, event):
         else rozrtba
     )     
     caption = " ╮•⎚ مـعلومات الـشخص مـن بـوت الخليفه \n"
-    caption += f"✛┈┉━｢ ᥉᥆υᖇᥴᥱ ᥉ρᎥժᥱᖇ . 🕷 ｣━┅┈✛\n"
+    caption += f"\n"
     caption += f"╽<b>- ❃الاسـم ⇜ </b> {full_name}\n"
     caption += f"╽<b>- ❃المـعـرف ⇜ </b> {username}\n"
     caption += f"╽<b>- ❃الايـدي  ⇜</b> <code>{user_id}</code>\n"
@@ -110,13 +110,13 @@ async def fetch_info(replied_user, event):
     caption += f"╽<b>-️ ❃الـنبـذه ⇜</b> \n<code>{user_bio}</code>\n"
     caption += f"╽<b>- رابط حسـابه ⇜</b> "
     caption += f'<a href="tg://user?id={user_id}">{first_name}</a>\n'
-    caption += f"✛┈┉━｢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗖𝗔𝗟𝗜𝗣𝗛 ｣━┅┈✛\n"
-    caption += f"♤ @ZZZ7iZ ♤"
+    caption += f"✛┈┉━｢ \n"
+    caption += f""
     return photo, caption
 
 @sbb_b.ar_cmd(pattern="ايدي(?: |$)(.*)")
 async def who(event):
-    roz = await edit_or_reply(event, "⇆")
+    roz = await edit_or_reply(event, "**اصـبر شـوي😄🤍**)
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
     replied_user = await get_user_from_event(event)
